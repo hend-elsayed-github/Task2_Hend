@@ -1,0 +1,40 @@
+#maindiv{
+  width: 70%;
+  height: 600px;
+  display: flex;
+}
+
+#baseinmobile{
+  display: none;
+}
+
+#main2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 375px) {
+  #maindiv{
+    width: 100%;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  #main2{
+   flex-direction: column-reverse;
+   padding: 0;
+   margin: 0;
+   
+  }
+
+  #baseinmobile{
+    display: flex;
+    background-color: white;
+    height: 3%;
+    margin-left: 10%;
+   
+  }
+}
